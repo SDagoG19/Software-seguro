@@ -54,7 +54,7 @@ func handler(event events.APIGatewayV2CustomAuthorizerV2Request) (events.APIGate
 func validateToken(authToken string, route string) (events.APIGatewayCustomAuthorizerResponse, error) {
 	_, err := jose.ParseSigned(authToken)
 	if err != nil {
-		return denyRequest(fmt.Sprintf("invalid authh0 token: %s", err.Error()))
+		return denyRequest(fmt.Sprintf("invalid0 authh0 token: %s", err.Error()))
 	}
 
 	return allowRequest(route)
