@@ -13,7 +13,7 @@ func handleRequest(ctx context.Context, request events.APIGatewayProxyRequest) (
 	return events.APIGatewayProxyResponse{
 		IsBase64Encoded: false,
 		StatusCode:      http.StatusOK,
-		Body:            "hello from get-metrics",
+		Body:            "hello from handle-github-webhook",
 	}, nil
 }
 
