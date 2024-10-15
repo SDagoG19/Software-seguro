@@ -20,7 +20,11 @@ resource "aws_lambda_function" "handle_github_webhook" {
 
   environment {
     variables = {
-      DEMO = "DEMO"
+      DB_HOST     = "platzi-course.cnyukgcaesvz.us-east-2.rds.amazonaws.com" //endpoint se encuentra en AWS RDS en la bd
+      DB_PORT     = "5432" //puerto genrico de postgres
+      DB_USER     = "Sdg"
+      DB_PASSWORD = "rds!db-c9cdbbdf-9d83-4d56-819b-4ac77c4d5b47"  // nombre del secrets name, se encuentra en secrets manage
+      DB_NAME     = "postgres"
     }
   }
 }
