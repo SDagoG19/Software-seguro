@@ -25,6 +25,8 @@ resource "aws_lambda_function" "handle_github_webhook" {
       DB_USER     = "Sdg"
       DB_PASSWORD = "rds!db-c9cdbbdf-9d83-4d56-819b-4ac77c4d5b47"  // nombre del secrets name, se encuentra en secrets manage
       DB_NAME     = "postgres"
+
+      GITHUB_SECRET = "github/secret" //secret name en el secret manager
     }
   }
 }
