@@ -15,7 +15,7 @@ const (
 	// Error return "error"
 	Error LogLevel = "error"
 	// Fatal return "fatal"
-	Fatal LogLevel = "fatal" //nada que hacer, que no es maneable
+	Fatal LogLevel = "fatal" //nada que hacer, que no es maneable, fix
 )
 
 type LogLevel string
